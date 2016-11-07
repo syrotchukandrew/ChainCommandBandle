@@ -1,0 +1,4 @@
+services:
+#    chain_command.example:
+#        class: ChainCommandBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
