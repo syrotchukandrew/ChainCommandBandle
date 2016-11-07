@@ -1,4 +1,11 @@
 services:
-#    chain_command.example:
-#        class: ChainCommandBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    chain_command.command_chain:
+        class: ChainCommandBundle\Chain\CommandChain
+
+    chain.command_listener:
+        class: ChainCommandBundle\EventListener\ChainCommandListener
+        arguments:
+            - "@chain_command.command_chain"
+            - "@logger"
+        tags:
+            - { name: kernel.event_listener, event: console.command }

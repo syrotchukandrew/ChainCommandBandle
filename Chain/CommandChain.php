@@ -70,7 +70,9 @@ class CommandChain
     public function isMain($commandName)
     {
         return array_key_exists($commandName, array_filter($this->commands,
-            function ($item) { return $item['parent'] ===  'main';} ));       //return all main commands
+            function ($item) {
+                return $item['parent'] === 'main';
+            }));       //return all main commands
     }
 
     /**
@@ -94,7 +96,9 @@ class CommandChain
     {
         //find children of main command
         $childrenByParent = array_filter($this->commands,
-            function ($item) use ($commandName) { return $item['parent'] ===  $commandName;} );
+            function ($item) use ($commandName) {
+                return $item['parent'] === $commandName;
+            });
         //create array priorities
         foreach ($childrenByParent as $key => $value) {
             $priorities[] = $value['priority'];
