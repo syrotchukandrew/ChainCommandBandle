@@ -23,19 +23,15 @@ $ composer require syrotchukandrew/chain-command-bundle
 
 or add to your composer.json file following:
 
+```json
 "require" : {
-
-        "syrotchukandrew/chain-command-bundle" : "dev-master"
-        
-    },
-    
+        "syrotchukandrew/chain-command-bundle" : "dev-master"        
+    },    
 "repositories" : [{
-
-        "type" : "vcs",
-        
-        "url" : "https://github.com/syrotchukandrew/ChainCommandBundle.git"
-        
+        "type" : "vcs",        
+        "url" : "https://github.com/syrotchukandrew/ChainCommandBundle.git"        
     }],
+```
     
 and run command:
 
