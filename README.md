@@ -20,6 +20,29 @@ following command to download the this bundle:
 $ composer require syrotchukandrew/chain-command-bundle
 ```
 
+
+or add to your composer.json file following:
+
+"require" : {
+
+        "syrotchukandrew/chain-command-bundle" : "dev-master"
+        
+    },
+    
+"repositories" : [{
+
+        "type" : "vcs",
+        
+        "url" : "https://github.com/syrotchukandrew/ChainCommandBundle.git"
+        
+    }],
+    
+and run command:
+
+```console
+$ composer update
+```
+
 ###Step 2: Enable the Bundle
 
 Then, enable the bundle by adding it to the list of registered bundles
