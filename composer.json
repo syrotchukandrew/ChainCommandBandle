@@ -19,9 +19,10 @@
     "sensio/framework-extra-bundle": "^3.0.2",
     "incenteev/composer-parameter-handler": "~2.0"
   },
+  "target-dir" : "ChainCommandBundle",
   "autoload": {
-    "psr-4": {
-      "syrotchukandrew\\ChainCommandBundle\\": ""
+    "psr-0": {
+      "ChainCommandBundle\\": ""
     }
   }
 }
