@@ -97,6 +97,7 @@ class ChainCommandListener
             //Executing main chain members
             foreach ($childrenCommands as $childCommandName => $values) {
                 try {
+                    $this->logger->info(sprintf('Executing %s command:', $childCommandName));
                     $childCommand = $application->get($childCommandName);
                     $childCommand->run($input, $output);
                 } catch (\Exception $exception) {

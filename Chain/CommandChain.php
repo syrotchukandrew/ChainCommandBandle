@@ -71,8 +71,8 @@ class CommandChain
     {
         return array_key_exists($commandName, array_filter($this->commands,
             function ($item) {
-                return $item['parent'] === 'main';
-            }));       //return all main commands
+                return $item['parent'] === 'main';      //return all main commands
+            }));
     }
 
     /**
