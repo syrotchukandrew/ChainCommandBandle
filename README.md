@@ -75,15 +75,19 @@ as service with tag "chain_command" - after that command is member of chain.
 
 Additional information as 'parent'='main' define your service as main command:
 
+```yml
     tags:
         - { name: chain_command, parent: main, priority:  null}
+```
         
 or 'parent'='main_command_name' define your command as member of chain where 
 
 main command's  name is 'main_command_name':
 
+```yml
     tags:
         - { name: chain_command, parent: main_command_name, priority:  10}
-        
+```
+ 
 priority define order executing commands in chain.
 
