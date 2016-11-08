@@ -21,8 +21,8 @@
   },
   "target-dir" : "ChainCommandBundle",
   "autoload": {
-    "psr-0": {
-      "ChainCommandBundle\\": ""
+    "psr-4": {
+      "SyrotchukAndrew\\ChainCommandBundle\\": ""
     }
   }
 }
